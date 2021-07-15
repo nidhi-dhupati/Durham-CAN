@@ -206,6 +206,69 @@ sup {
   top: -0.5em;
 }
 
+/* blog post preview css stuff */
+
+body{
+  height: 100vh;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog{
+  width: 1000px;
+  height: 700px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 4px 7px 29px 0px rgba(69,69,69,0.3);
+  margin: 30px;
+}
+
+.img{
+  height: 100%;
+  width: 50%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/1280px--Insert_image_here-.svg.png') no-repeat center center;
+  background-size: cover
+}
+
+.blog-name{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-name h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+
+.details{
+  line-height: 25px;
+  font-size: 25px;
+}
+
+.details p span{
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+/* end blog post css stuff */
+
 a {
   color: #0d6efd;
   text-decoration: underline;
@@ -289,6 +352,190 @@ th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
+
+/*
+tenant stories page
+*/
+
+
+/* Reset to border box
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+
+body {
+	background-color: rgb(255, 255, 255);
+	font: 1.2em/1.3 Helvetica, Arial, Verdana, sans-serif;
+	margin: 1em 3%;
+
+	/* center the page
+    display: flex;
+    justify-content: center;
+}
+
+/* set a max width
+.container {
+	max-width: 1400px;
+}
+*/
+
+h1 {
+	font-size: 2em;
+	line-height: 1;
+}
+
+p {
+	margin-bottom: .6em;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.thumbnail-grid ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+/*.thumbnail-grid li {
+	margin-right: 1.33%;
+	width: 24%;
+}
+
+.thumbnail-grid li:nth-child(4n) {
+  margin-right: 0;
+}
+*/
+
+.thumbnail-grid li {
+	width: 22%;
+}
+
+
+.thumbnail-grid .description {
+	font-size: .75em;
+	position: relative;
+
+}
+
+/* .thumbnail-grid .price {
+    position: absolute;
+    right: 0;
+    top: 0;
+	text-align: right;
+	width: 25%;
+} */
+
+
+.thumbnail-grid .thumbnail {
+	position: relative;	/* Set the container for the images */
+}
+
+.thumbnail-grid img {
+    display: block; /* Get rid of tiny space below images */
+    margin-bottom: .3em;
+}
+
+.overlay {
+	/* Set up the overlay text and background */
+	background-color: rgba( 255, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	padding-top: 40%;
+	text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+.thumbnail-grid .overlay {
+    transition: 1s all;
+}
+
+/* Style header and footer */
+header {
+	padding: 2em 0;
+}
+
+footer {
+	border-top: 1px solid rgba(200,200,200,.5);
+	padding: 1em 0;
+}
+
+
+/* Utility classes */
+.alignright {
+	float: center;
+	margin-left: 1.5em;
+}
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+}
+
+#thumbnails figcaption {
+	font-size: 32px;
+}
+
+
+/* Content Links */
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: gray;
+	text-decoration: underline;
+
+}
+
+/*
+end of tenant stories page
+*/
+
+/* individual stories pages */
+
+.containerx {
+  display: flex;
+  align-items: left;
+  justify-content: left
+}
+
+img {
+  max-width: 100%
+}
+
+.image {
+  flex-basis: 20%
+  padding-left: 10px;
+}
+
+.text {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+/* end */
 
 thead,
 tbody,

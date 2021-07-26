@@ -206,69 +206,6 @@ sup {
   top: -0.5em;
 }
 
-/* blog post preview css stuff */
-
-body{
-  height: 100vh;
-}
-
-.container{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blog{
-  width: 1000px;
-  height: 700px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 4px 7px 29px 0px rgba(69,69,69,0.3);
-  margin: 30px;
-}
-
-.img{
-  height: 100%;
-  width: 50%;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/1280px--Insert_image_here-.svg.png') no-repeat center center;
-  background-size: cover
-}
-
-.blog-name{
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.blog-name h1{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 50px;
-  margin-top: 50px;
-  cursor: pointer;
-  padding: 10px 20px;
-}
-
-
-.details{
-  line-height: 25px;
-  font-size: 25px;
-}
-
-.details p span{
-  font-size: 25px;
-  font-weight: normal;
-  text-transform: lowercase;
-}
-
-/* end blog post css stuff */
-
 a {
   color: #0d6efd;
   text-decoration: underline;
@@ -295,8 +232,8 @@ samp {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
+  margin-bottom: 0rem;
+  overflow: visible;
   font-size: 0.875em;
 }
 pre code {
@@ -393,6 +330,7 @@ img {
 
 .thumbnail-grid ul {
 	display: flex;
+	overflow: visible;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -526,6 +464,7 @@ img {
   flex-basis: 500px;
   flex-shrink: 0;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .text {

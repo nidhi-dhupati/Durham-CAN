@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Durham CAN</title>
+    <!-- Favicon-->
+    <link rel="icon" href="logo2.jpeg" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <img src = "logo2.jpeg" alt = "logo" width = "105" height = "50" />
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="hcv_dashboard.html">Dashboard</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="stories.html">Stories</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid">
+            <h1 class="mt-4">Where Do Section 8 Voucher Holders Live?</h1>
+            <p>
+                This dashboard shows where families with housing choice vouchers live in Durham. The map is of Durham County, and each shaded section represents a census tract<sup>1</sup>.  The shading represents what percentage of housing choice voucher residents live in that census tract.
+            </p>
+            <p>
+            Directions:
+                <ul>
+                    <li>Scroll over the map to see the name of each census tract.</li>
+                    <li>Click on a census tract to see the specific percentage of housing choice voucher residents living in that census tract.</li>
+                    <li>Click the button below to add or change the graph’s features. The shaded circles represent another characteristic of each census tract. Bigger circles and darker colors represent a greater quantity. Click on a census tract to see the numerical data associated with the shading.</li>
+                    <li> Click and hold anywhere on the map to move around.</li>
+                    <li> In the upper left hand corner of the graph, click the “+” or “-” symbols to zoom in or zoom out. If you continue zooming in, it is possible to see road names. Check out where you live!</li>
+                    <li> The button below the “+” and “-” symbols lets you add or remove layers. You can deselect the checkbox to see Durham without the added map features.</li>
+                </ul>
+
+
+            </p>
+            <div id = "graphanddropdown">
+
+                <div id = "narrow" class = "dropdown">
+                    <button onclick = "myFunction()" class = "dropbtn">Click to Change Graph Features</button>
+                    <div id = "myDropdown" class = "dropdown-content">
+                        <a href="hcv_dashboard.html">Default</a>
+                        <a href="percentbelowpoverty.html">Percent Below Poverty</a>
+                        <a href="medhhinc.html">Median Household Income</a>
+                        <a href="populationdensity.html">Population Density</a>
+                        <a href="rentof2bedroom.html">Mean Rent (2 Bedroom)</a>
+
+                    </div>
+
+                </div>
+                <div id = "wide">
+                    <iframe seamless src="nofeaturesgraph.html" style = "border: 5px solid grey" width="80%"
+                            height="750"></iframe>
+                </div>
+            </div>
+            <p>
+                <sup>1</sup>Census tracts are small, relatively permanent statistical subdivisions of a county used to collect census data. Each census tract averages about 4,000 residents.
+            </p>
+            <p>
+                Data for the added features is from the American Community Survey 5-Year Estimates for 2019.
+            </p>
+            <p>
+                Housing Choice Voucher data is from the United States Department of Housing and Urban Development (HUD). The dataset can be accessed <a href = "https://catalog.data.gov/dataset/assisted-housing-housing-choice-vouchers-by-tract-national-geospatial-data-asset-ngda"> here</a>.
+            </p>
+
+        </div>
+        <!-- End of Page Content -->
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

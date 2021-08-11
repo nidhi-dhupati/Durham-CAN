@@ -230,10 +230,14 @@ samp {
 }
 
 pre {
+  body{overflow:hidden /*use it only if needed, otherwise remove it */}
+  @media(max-width:768px){
+  body{overflow: auto; height: 100%; font-size: 81.44% /* change if needed */;}
+  }
   display: block;
   margin-top: 0;
   margin-bottom: 0rem;
-  overflow: visible;
+  /* overflow: visible; */
   font-size: 0.875em;
 }
 pre code {

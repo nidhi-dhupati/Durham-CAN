@@ -457,6 +457,7 @@ iframe {
 .containerx {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap; 
   justify-content: right
 }
 
@@ -469,9 +470,11 @@ img {
   flex-shrink: 0;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 10px;
 }
 
 .text {
+  flex-basis: 760px;
 
   font-size: 15px;
   padding-left: 20px;

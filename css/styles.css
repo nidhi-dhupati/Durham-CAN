@@ -483,6 +483,18 @@ img {
 
 /* end */
 
+/* fixing dashboard */
+#graphanddropdown #wide {
+  position: relative;
+  width: 80%;
+  padding-bottom: 75%;
+}
+ 
+#wide iframe { 
+position: absolute;
+} 
+/* end */
+
 thead,
 tbody,
 tfoot,
